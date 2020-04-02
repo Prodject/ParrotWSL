@@ -1,5 +1,5 @@
 # ParrotWSL
- Installing Parrot distribution in WSL
+ Installing Parrot distribution in WSL2
 
 To install the distribution you need a base. This may be Kali Linux or Ubuntu.
 
