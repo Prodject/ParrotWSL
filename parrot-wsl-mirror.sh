@@ -234,5 +234,5 @@ done
 if [ `whoami` == "root" ]; then
 	init_function;
 else
-	echo "R U Drunk? This script needs to be run as root!"
+	echo "Try with root access!"
 fi
