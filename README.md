@@ -30,7 +30,7 @@ sudo apt install parrot-tools-full
 
 8. All done)
 
-[Image alt](https://github.com/Prodject/ParrotWSL/raw/parrot.jpg)
+[Image alt](https://github.com/Prodject/ParrotWSL/tree/master/raw/parrot.jpg)
 
 Note: if you run the parrot-wsl-mirror.sh file, then during the installation process you can select a mirror for your location.
 
