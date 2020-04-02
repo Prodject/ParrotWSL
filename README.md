@@ -10,7 +10,9 @@ To install, use the following instructions:
 1. Install the Kali Linux or Ubuntu distribution from the Microsoft Store.
 2. Update available repositories, install the update and the gnupg, git utility. You can do this with the command:
 
+```bash
 sudo apt update && apt upgrade -y && apt install gnupg git -y
+```
 
 3. Clone this repository and run the script with the command: 
 
