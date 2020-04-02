@@ -12,10 +12,7 @@ sudo apt update && apt upgrade -y && apt install gnupg git -y
 
 3. Clone this repository and run the script with the command: 
 
-git clone https://github.com/Prodject/ParrotWSL.git
-cd ParrotWSL
-chmod a+x parrot-wsl.sh
-./parrot-wsl.sh
+git clone https://github.com/Prodject/ParrotWSL.git && cd ParrotWSL && chmod a+x parrot-wsl.sh && ./parrot-wsl.sh
 
 4. During installation, you must select the distribution version (home, security, etc.)
 
