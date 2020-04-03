@@ -29,7 +29,7 @@ chmod a+x parrot-wsl.sh ./parrot-wsl.sh
 5. Next, you need to configure the resolv.conf file:
 
 ```bash
-sudo mv /etc/reslov.conf /etc/resolv.conf.bak
+sudo mv /etc/resolv.conf /etc/resolv.conf.bak
 ```
 
 6. Add a folder with ParrotOS to Windows Defender exceptions (Kali Linux). You can open the folder with Parrot OS using the command "explorer.exe ."
