@@ -46,4 +46,7 @@ sudo apt install parrot-tools-full
 
 Note: if you run the parrot-wsl-mirror.sh file, then during the installation process you can select a mirror for your location.
 
-
+ Know Issues
+ --------------------------------------
+ 
+ By default, mate environment is set, but if you are using X410 in Windowed Apps mode, you will not be able to use this mode. In this case, it is recommended to install XFCE, you can install from script additions wsl.post.sh
