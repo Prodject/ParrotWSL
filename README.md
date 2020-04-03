@@ -26,21 +26,15 @@ chmod a+x parrot-wsl.sh ./parrot-wsl.sh
 
 4. During installation, you must select the distribution version (home, security, etc.)
 
-5. Next, you need to configure the resolv.conf file:
+5. Add a folder with ParrotOS to Windows Defender exceptions (Kali Linux). You can open the folder with Parrot OS using the command "explorer.exe ."
 
-```bash
-sudo mv /etc/resolv.conf /etc/resolv.conf.bak
-```
-
-6. Add a folder with ParrotOS to Windows Defender exceptions (Kali Linux). You can open the folder with Parrot OS using the command "explorer.exe ."
-
-7. You can install the full version of the system with the command:
+6. You can install the full version of the system with the command:
 
 ```bash
 sudo apt install parrot-tools-full
 ```
 
-8. All done)
+7. All done)
 
 ![neofetch](https://github.com/Prodject/ParrotWSL/raw/master/.raw/parrot.png)
 
