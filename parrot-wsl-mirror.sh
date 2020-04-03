@@ -154,7 +154,9 @@ function embedded_install() {
 	apt-get -y --allow-downgrades --allow-remove-essential --allow-change-held-packages -o Dpkg::Options::="--force-overwrite" install parrot-interface parrot-mini
 }
 
-
+function generate_conf() {
+	mv /etc/resolv.conf /etc/resolv.conf.bak
+}
 
 function init_function() {
 clear
@@ -169,61 +171,61 @@ while [ opt != '' ]
         option_picked "Installing Core";
 		select_mirror;
 		core_install;
+		generate_conf;
 		option_picked "Operation Done!";
         exit;
         ;;
-
         2) clear;
 		option_picked "Installing Headless Edition";
 		select_mirror;
 		core_install;
 		headless_install;
+		generate_conf;
 		option_picked "Operation Done!";
 		exit;
-            ;;
-
+        ;;
         3) clear;
 		option_picked "Installing Parrot Security OS";
 		select_mirror;
 		core_install;
 		standard_install;
+		generate_conf;
 		option_picked "Operation Done!";
 		exit;
-            ;;
-
+        ;;
         4) clear;
 		option_picked "Installing Full Edition";
 		select_mirror;
 		core_install;
 		full_install;
+		generate_conf;
 		option_picked "Operation Done!";
 		exit;
-            ;;
-	5) clear;
+        ;;
+		5) clear;
 		option_picked "Installing Home Edition";
 		select_mirror;
 		core_install;
 		home_install;
+		generate_conf;
 		option_picked "Operation Done!";
 		exit;
 		;;
-	6) clear;
+		6) clear;
 		option_picked "Installing Embedded Edition";
 		select_mirror;
 		core_install;
 		embedded_install;
+		generate_conf;
 		option_picked "Operation Done!";
 		exit;
 	    ;;
         x)exit;
         ;;
-
-	q)exit;
-	;;
-
+		q)exit;
+		;;
         \n)exit;
         ;;
-
         *)clear;
         option_picked "Pick an option from the menu";
         show_menu;
